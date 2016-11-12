@@ -2,9 +2,9 @@ import math
 import sys
 
 def rnaarp():
-    r= float(input("Hier je r: "))
+    r= float(input("Hier uw r: "))
 
-    samplesize= float(input("Hier je sample size: "))
+    samplesize= float(input("Hier uw sample size: "))
 
     r2= r*r 
     boven= samplesize -2
@@ -24,7 +24,7 @@ def rnaarp():
     
         
 def nogeenkeer():
-    s = str(input("Wil je nog een keer iets invullen?: Ja of Nee?"))
+    s = str(input("Wilt u nog een keer iets invullen?: Ja of Nee?"))
     s2= s.lower()
     if s2 == "ja":
         main()
