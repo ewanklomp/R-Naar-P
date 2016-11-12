@@ -6,9 +6,8 @@ def rnaarp():
 
     samplesize= float(input("Hier uw sample size: "))
 
-    r2= r*r 
     boven= samplesize -2
-    onder = 1- r2
+    onder = 1- r*r
     wortel = boven/onder
     wortelresultaat = math.sqrt(wortel)
     resultaat = wortelresultaat * r
