@@ -20,10 +20,10 @@ def rnaarp():
     else:
         print ("Het is  statistically significant aangezien het hoger is dan tcrit = 1.987 (df=88)")
         print ("Schrijf het op als: r= " + str(r) + ",n= " + str(samplesize) + ", p <.05, two-tails") 
-    nogeenkeer()
+    doorgaan()
     
         
-def nogeenkeer():
+def doorgaan():
     s = str(input("Wilt u nog een keer iets invullen?: Ja of Nee?"))
     s2= s.lower()
     if s2 == "ja":
@@ -32,6 +32,6 @@ def nogeenkeer():
         sys.exit(0)
     else:
         print("Vul ja of nee in graag.")
-        nogeenkeer()
+        doorgaan()
 
 main()
