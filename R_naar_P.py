@@ -1,7 +1,7 @@
 import math
 import sys
 
-def rp():
+def main():
     r= float(input("Hier je r: "))
 
     samplesize= float(input("Hier je sample size: "))
