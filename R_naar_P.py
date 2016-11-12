@@ -1,7 +1,7 @@
 import math
 import sys
 
-def main():
+def rnaarp():
     r= float(input("Hier je r: "))
 
     samplesize= float(input("Hier je sample size: "))
