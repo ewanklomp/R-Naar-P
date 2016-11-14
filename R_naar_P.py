@@ -26,11 +26,11 @@ def doorgaan():
     s = str(input("Wilt u nog een keer iets invullen?: Ja of Nee?"))
     s2= s.lower()
     if s2 == "ja":
-        main()
+        rnaarp()
     elif s2 == "nee":
         sys.exit(0)
     else:
         print("Vul ja of nee in graag.")
         doorgaan()
 
-main()
+rnaarp()
