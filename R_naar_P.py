@@ -9,8 +9,7 @@ def rnaarp():
     boven= samplesize -2
     onder = 1- r*r
     wortel = boven/onder
-    wortelresultaat = math.sqrt(wortel)
-    resultaat = wortelresultaat * r
+    resultaat = math.sqrt(wortel) *r
     print("t = " + str(resultaat))
     tcrit= 1.987
     if tcrit > resultaat:
