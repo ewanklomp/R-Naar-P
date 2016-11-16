@@ -17,7 +17,7 @@ def rnaarp():
         print ("Het is niet statistically significant aangezien het lager is dan tcrit = " + str(tcrit) + " (df=" + str(df) + ")")
         print ("Schrijf het op als: r= " + str(r) + ",n= " + str(samplesize) + ", p >.05, two-tails")
     else:
-        print ("Het is  statistically significant aangezien het hoger is dan tcrit = " + str(tcrit) + " (df=" + str(df) + ")")
+        print ("Het is statistically significant aangezien het hoger is dan tcrit = " + str(tcrit) + " (df=" + str(df) + ")")
         print ("Schrijf het op als: r= " + str(r) + ",n= " + str(samplesize) + ", p <.05, two-tails") 
     doorgaan()
     
