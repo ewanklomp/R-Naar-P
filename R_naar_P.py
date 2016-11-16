@@ -5,18 +5,18 @@ def rnaarp():
     r= float(input("Hier uw r: "))
 
     samplesize= float(input("Hier uw sample size: "))
-
+	tcrit= float(input("Hier uw tcrit: "))
     boven= samplesize -2
     onder = 1- r*r
     wortel = boven/onder
     resultaat = math.sqrt(wortel) *r
     print("t = " + str(resultaat))
-    tcrit= 1.987
+    	
     if tcrit > resultaat:
-        print ("Het is niet statistically significant aangezien het lager is dan tcrit = 1.987 (df=88)")
+        print ("Het is niet statistically significant aangezien het lager is dan tcrit = 1.987 (df=??)")
         print ("Schrijf het op als: r= " + str(r) + ",n= " + str(samplesize) + ", p >.05, two-tails")
     else:
-        print ("Het is  statistically significant aangezien het hoger is dan tcrit = 1.987 (df=88)")
+        print ("Het is  statistically significant aangezien het hoger is dan tcrit = 1.987 (df=??)")
         print ("Schrijf het op als: r= " + str(r) + ",n= " + str(samplesize) + ", p <.05, two-tails") 
     doorgaan()
     
