@@ -6,6 +6,7 @@ def rnaarp():
 
     samplesize= float(input("Hier uw sample size: "))
 	tcrit= float(input("Hier uw tcrit: "))
+	df= float(input("Hier uw df: "))
     boven= samplesize -2
     onder = 1- r*r
     wortel = boven/onder
