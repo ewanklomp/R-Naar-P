@@ -6,7 +6,7 @@ def rnaarp():
 
     samplesize= float(input("Hier uw sample size: "))
 	tcrit= float(input("Hier uw tcrit: "))
-	df= float(input("Hier uw df: "))
+	df= int(input("Hier uw df: "))
     boven= samplesize -2
     onder = 1- r*r
     wortel = boven/onder
@@ -14,10 +14,10 @@ def rnaarp():
     print("t = " + str(resultaat))
     	
     if tcrit > resultaat:
-        print ("Het is niet statistically significant aangezien het lager is dan tcrit = " + str(tcrit) + " (df=??)")
+        print ("Het is niet statistically significant aangezien het lager is dan tcrit = " + str(tcrit) + " (df=" + str(df) + ")")
         print ("Schrijf het op als: r= " + str(r) + ",n= " + str(samplesize) + ", p >.05, two-tails")
     else:
-        print ("Het is  statistically significant aangezien het hoger is dan tcrit = " + str(tcrit) + " (df=??)")
+        print ("Het is  statistically significant aangezien het hoger is dan tcrit = " + str(tcrit) + " (df=" + str(df) + ")")
         print ("Schrijf het op als: r= " + str(r) + ",n= " + str(samplesize) + ", p <.05, two-tails") 
     doorgaan()
     
