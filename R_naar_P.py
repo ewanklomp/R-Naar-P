@@ -1,6 +1,5 @@
 import math
 import sys
-import test
 
 def rnaarp():
     r= float(input("Hier uw r: "))
